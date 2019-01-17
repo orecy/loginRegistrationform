@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.orecy.loginregistrationform.LoginActivity">
+
+
+    <EditText
+        android:id="@+id/emailtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="159dp"
+        android:ems="10"
+        android:hint="Enter Mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/passtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailtxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/lgnbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/passtxt"
+        android:layout_alignRight="@+id/passtxt"
+        android:layout_below="@+id/passtxt"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="80dp"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/regbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lgnbtn"
+        android:layout_alignBottom="@+id/lgnbtn"
+        android:layout_alignLeft="@+id/passtxt"
+        android:layout_alignStart="@+id/passtxt"
+        android:text="Register" />
+</RelativeLayout>
